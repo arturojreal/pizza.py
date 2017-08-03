@@ -8,17 +8,23 @@ print "{} attendees? If this is correct, \
 hit ENTER. If not, exit with CTRL-C.".format(attendees)
 raw_input()
 
+#TODO include option/prompt for slices per person input
 # calculates amount of total slices, assuming 3 per person
 total_slices = int(attendees) * 3
 print "That's a total of {} slices!".format(total_slices)
 
+#TODO include option/prompt for slices per box input, box size (S, M, L...)
 # calculates amount of boxes to be ordered, assuming 8 slices per box
 total_boxes = (total_slices // 8) + 1
 print "And {} boxes in total.".format(total_boxes)
 print ""
+
+#TODO include option/prompt for number of flavor breakdowns, option for gluten-free or not
 print "Please enter the flavor breakdowns below! \
 You'll have a choice of 4 non- gluten-free flavors and 1 gluten-free flavor:"
 print ""
+
+#TODO write a function to simplify this:
 
 # takes flavor input
 firstChoice = raw_input("35% should be: ")
